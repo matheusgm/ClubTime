@@ -1,0 +1,77 @@
+/*
+ * Globals
+ */
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  /* background: url(../img/background1.jpg) no-repeat 50% 50%; */
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body {
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+section{
+  /* background-color: yellow; */
+  height: 90%;
+}
+
+a,
+a:focus,
+a:hover{
+  color: #fff;
+}
+
+.container{
+  /* background-color: rebeccapurple; */
+  height: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center
+}
+
+
+#navbarNav{
+  /* background-color: greenyellow; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+#navbarNav ul li{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
+  border-bottom: .25rem solid transparent
+}
+#navbarNav ul li:hover,
+#navbarNav ul li:focus{
+  border-bottom-color: rgba(236, 221, 11, 0.6);
+}
+
+
+#navbarNav ul li.active a{
+  color: rgba(236, 221, 11, 0.6);
+}
+
+#navbarNav ul li.active{
+  border-bottom-color: rgba(236, 221, 11, 0.6);
+}
+
+
+.navbar-brand{
+  /* background-color: hotpink; */
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
