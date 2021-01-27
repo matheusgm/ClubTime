@@ -74,4 +74,9 @@ a:hover{
   font-weight: bolder;
 }
 
+#columnTromb .col .row .col-sm{
+  background-color: aqua;
+  text-align: center;
+}
+
 
