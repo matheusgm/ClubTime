@@ -61,12 +61,8 @@ a:hover{
 }
 
 
-#navbarNav ul li.active a{
+#navbarNav ul li a.active{
   color: rgba(242, 148, 32, 1);
-}
-
-#navbarNav ul li.active{
-  border-bottom-color: rgba(242, 148, 32, 1);
 }
 
 
@@ -79,36 +75,43 @@ a:hover{
 }
 
 
-#titleSection{
+#titleAcc,#titlePres,#titleTromb,#titleEvent,#titlePart,#titleContact{
   justify-content: left;
   font-size: 24pt;
   font-weight: bold;
   color: #000000;
 }
 
-#accueil{
+#titlePres p,#titleEvent p,#titleContact p{
+  border-bottom: .25rem solid rgba(242, 148, 32, 0.7);
+}
+
+#titleAcc p,#titleTromb p,#titlePart p{
+  border-bottom: .25rem solid rgba( 96, 126, 137,0.8);
+}
+
+#accueil, #trombinoscope, #partenaire{
   padding-top: 90px;
   background-color:rgba(242, 148, 32, 0.7);
 }
 
-#containerAcc{
-  padding-bottom: 40px;
-}
-
-#presentation{
+#presentation, #events, #contact{
   padding-top: 90px;
   background-color: rgba( 96, 126, 137,0.8);
 }
 
+#containerAcc{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
 #containerPres{
+  padding-top: 40px;
   padding-bottom: 40px;
   text-align: justify;
 }
 
-#trombinoscope{
-  padding-top: 90px;
-  background-color: rgba(242, 148, 32, 0.7);
-}
 
 #containerTromb .col-sm{
   /* background-color: aqua; */
@@ -116,8 +119,8 @@ a:hover{
   justify-content: center;
   text-align: center;
   padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .row-section{
@@ -166,21 +169,44 @@ a:hover{
   color: rgba(0, 0, 0,0.7) 
 }
 
-#events{
-  padding-top: 90px;
-  background-color: rgba( 96, 126, 137,0.8);
+#containerEvent{
+  height: 600px;
 }
 
-#partenaire{
-  padding-top: 90px;
-  background-color: rgba(242, 148, 32, 0.7);
-}
-
-#contact{
-  padding-top: 90px;
-  background-color: rgba( 96, 126, 137,0.8);
+#containerPart{
+  height: 600px;
 }
 
 #containerContact{
-  height: 600px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+#containerContact i{
+  font-size: 4rem;
+  color: #000000;
+}
+
+#containerContact p{
+  font-size: 12pt;
+  font-weight: bold;
+  color: #000000;
+}
+
+#containerContact .col .row{
+  padding-bottom: 120px;
+}
+
+#contact_perso .col{
+  width: 100%;
+  text-align: center;
+}
+#contact_social_network{
+  justify-content: center;
+}
+#contact_social_network .col{
+  flex-basis: 0;
+  flex-grow: 0;
+  min-width: auto;
 }
