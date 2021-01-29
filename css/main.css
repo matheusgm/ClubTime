@@ -16,15 +16,6 @@ body {
 
 }
 
-body {
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
-
-section{
-  /* background-color: yellow; */
-  height: 90%;
-}
-
 a,
 a:focus,
 a:hover{
@@ -74,9 +65,67 @@ a:hover{
   font-weight: bolder;
 }
 
-#columnTromb .col .row .col-sm{
+
+#columnTromb .col-sm{
   background-color: aqua;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
+.row-section{
+  padding-bottom: 10px;
+}
+
+#accueil{
+  height: 100%;
+  background-color: wheat;
+}
+
+#trombinoscope{
+  margin: 10px;
+}
+
+.avatar-img{
+  position: relative;
+  padding: 10px;
+}
+
+.avatar {
+  /* position: absolute; */
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.avatar-img .flag{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.col-sm p{
+  margin: 0;
+}
+
+.avatar-text{
+  padding: 10px;
+  font-weight: bold;
+}
+
+.nom-text{
+  font-size: 14pt;
+  color: #000000;
+}
+
+.nom-pos{
+  font-size: 12pt;
+  color: rgba(0, 0, 0,0.7) 
+}
 
