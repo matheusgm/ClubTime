@@ -35,13 +35,13 @@ infoMembres = {
                     "nom": "s",
                     "occupation": "Prez",
                     "photo": "",
-                    "flag":""
+                    "flag":"brazil"
                 },
                 {
                     "nom": "d",
                     "occupation": "Vice Prez",
                     "photo": "",
-                    "flag":""
+                    "flag":"brazil"
                 },
               
             ]

@@ -1,8 +1,11 @@
-console.log("Hello")
+// console.log("Hello")
 
-console.log(infoMembres)
+// console.log(infoMembres)
 
-var gridTromb = document.getElementById("columnTromb").getElementsByClassName("col")[0];
+var textPresentation = document.getElementById("containerPres").getElementsByTagName("p")[0];
+textPresentation.innerText = "lorem ipsum dolor sit amet consectetur adipiscing elit in purus dapibus senectus penatibus imperdiet commodo maecenas sapien scelerisque eros blandit facilisi nullam pharetra ultrices est etiam erat nisl eget donec aptent sem cursus vehicula luctus dui fermentum nascetur elementum et sed eu interdum himenaeos congue tempus ornare maximus tristique porttitor tortor dignissim fusce neque ex orci laoreet lacus diam ad ullamcorper vivamus ac porta gravida netus magnis sociosqu non mattis tempor quis felis consequat finibus ligula velit natoque eleifend molestie arcu curabitur libero ut vestibulum mi lectus feugiat massa convallis sagittis enim at integer vulputate montes accumsan urna magna pulvinar"
+
+var gridTromb = document.getElementById("containerTromb").getElementsByClassName("col")[0];
 for (var el in infoMembres) {
     let row = gridTromb.appendChild(document.createElement("div"))
     row.className = "row row-section";

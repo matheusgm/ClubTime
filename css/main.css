@@ -2,18 +2,25 @@
  * Globals
  */
 
+ /* cor1 = 242, 148, 32
+ cor2 = 37,49,54 */
+
 /*
  * Base structure
  */
 
 html,
 body {
-  height: 100%;
-  background-color: #333;
+  /* background-color: #333; */
   /* background: url(../img/background1.jpg) no-repeat 50% 50%; */
   background-size: cover;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
 
+p{
+  margin: 0;
 }
 
 a,
@@ -28,6 +35,10 @@ a:hover{
   display: flex;  
   justify-content: center;  
   align-items: center
+}
+
+#headNav nav{
+  background-color: #333;
 }
 
 
@@ -46,49 +57,80 @@ a:hover{
 }
 #navbarNav ul li:hover,
 #navbarNav ul li:focus{
-  border-bottom-color: rgba(236, 221, 11, 0.6);
+  border-bottom-color: rgba(242, 148, 32, 1);
 }
 
 
 #navbarNav ul li.active a{
-  color: rgba(236, 221, 11, 0.6);
+  color: rgba(242, 148, 32, 1);
 }
 
 #navbarNav ul li.active{
-  border-bottom-color: rgba(236, 221, 11, 0.6);
+  border-bottom-color: rgba(242, 148, 32, 1);
 }
 
 
 .navbar-brand{
   /* background-color: hotpink; */
-  font-size: 30px;
-  font-weight: bolder;
+  margin: 0;
+  width: 70px;
+  height: 70px;
+  padding: 0;
 }
 
 
-#columnTromb .col-sm{
-  background-color: aqua;
+#titleSection{
+  justify-content: left;
+  font-size: 24pt;
+  font-weight: bold;
+  color: #000000;
+}
+
+#accueil{
+  padding-top: 90px;
+  background-color:rgba(242, 148, 32, 0.7);
+}
+
+#containerAcc{
+  padding-bottom: 40px;
+}
+
+#presentation{
+  padding-top: 90px;
+  background-color: rgba( 96, 126, 137,0.8);
+}
+
+#containerPres{
+  padding-bottom: 40px;
+  text-align: justify;
+}
+
+#trombinoscope{
+  padding-top: 90px;
+  background-color: rgba(242, 148, 32, 0.7);
+}
+
+#containerTromb .col-sm{
+  /* background-color: aqua; */
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .row-section{
   padding-bottom: 10px;
 }
 
-#accueil{
-  height: 100%;
-  background-color: wheat;
-}
-
-#trombinoscope{
-  margin: 10px;
-}
-
 .avatar-img{
   position: relative;
-  padding: 10px;
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+
 }
 
 .avatar {
@@ -105,17 +147,12 @@ a:hover{
   right: 0;
   bottom: 0;
   z-index: 2;
-  margin-right: 10px;
   width: 50px;
   height: 50px;
 }
 
-.col-sm p{
-  margin: 0;
-}
-
 .avatar-text{
-  padding: 10px;
+  padding-top: 10px;
   font-weight: bold;
 }
 
