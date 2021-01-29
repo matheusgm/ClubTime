@@ -166,3 +166,21 @@ a:hover{
   color: rgba(0, 0, 0,0.7) 
 }
 
+#events{
+  padding-top: 90px;
+  background-color: rgba( 96, 126, 137,0.8);
+}
+
+#partenaire{
+  padding-top: 90px;
+  background-color: rgba(242, 148, 32, 0.7);
+}
+
+#contact{
+  padding-top: 90px;
+  background-color: rgba( 96, 126, 137,0.8);
+}
+
+#containerContact{
+  height: 600px;
+}
