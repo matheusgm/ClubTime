@@ -91,24 +91,36 @@ a:hover{
 }
 
 #accueil, #trombinoscope, #partenaire{
-  padding-top: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color:rgba(242, 148, 32, 0.7);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
 #presentation, #events, #contact{
-  padding-top: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgba( 96, 126, 137,0.8);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+#accueil{
+  margin-top: 86px;
+}
+
+#anchorAcc,#anchorPres, #anchorTromb,#anchorEvents,#anchorPart,#anchorContact{
+  position: relative;
+  height: 0;
+  top: -86px;
 }
 
 #containerAcc{
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 
 #containerPres{
   padding-top: 40px;
-  padding-bottom: 40px;
   text-align: justify;
 }
 
@@ -119,8 +131,8 @@ a:hover{
   justify-content: center;
   text-align: center;
   padding: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .row-section{
@@ -142,6 +154,8 @@ a:hover{
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  padding: 2px;
+  background-color: #000000;
   z-index: 1;
 }
 
@@ -184,8 +198,8 @@ a:hover{
 }
 
 #containerContact i{
-  font-size: 4rem;
-  color: #000000;
+  font-size: 3rem;
+  color: rgba(0, 0, 0,0.7);
 }
 
 #containerContact p{
@@ -195,7 +209,7 @@ a:hover{
 }
 
 #containerContact .col .row{
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 
 #contact_perso .col{

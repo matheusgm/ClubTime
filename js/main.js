@@ -27,10 +27,15 @@ function createGrid(tab, numCol, pos) {
             if(tab[i]["flag"]!=""){
                 imgFlag = '<img src="./img/drapeaux/'+tab[i]["flag"]+'.png" alt="Flag" class="flag">';
             }
+  
+            imgPhoto = './img/photos/membres/sansPhoto.png'
+            if(tab[i]["photo"]!=""){
+              imgPhoto = './img/photos/membres/'+tab[i]["photo"]
+            }
             
             line.getElementsByClassName("col-sm")[i % numCol].innerHTML = 
             '<div class="avatar-img">'+
-            '<img src="./img/photos/photo1.jpg" alt="Avatar" class="avatar">'+
+            '<img src="'+imgPhoto+'" alt="Avatar" class="avatar">'+
             imgFlag+
             '</div>'+
             '<div class="avatar-text">'+
