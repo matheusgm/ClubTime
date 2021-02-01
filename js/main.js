@@ -24,57 +24,68 @@ function createGrid(tab, numCol, pos) {
         line.appendChild(document.createElement("div")).className = "col-sm";
         if (i < tab.length) {
             imgFlag = ""
-            if(tab[i]["flag"]!=""){
-                imgFlag = '<img src="./img/drapeaux/'+tab[i]["flag"]+'.png" alt="Flag" class="flag">';
+            if (tab[i]["flag"] != "") {
+                imgFlag = '<img src="./img/drapeaux/' + tab[i]["flag"] + '.png" alt="Flag" class="flag">';
             }
-  
+
             imgPhoto = './img/photos/membres/sansPhoto.png'
-            if(tab[i]["photo"]!=""){
-              imgPhoto = './img/photos/membres/'+tab[i]["photo"]
+            if (tab[i]["photo"] != "") {
+                imgPhoto = './img/photos/membres/' + tab[i]["photo"]
             }
-            
-            line.getElementsByClassName("col-sm")[i % numCol].innerHTML = 
-            '<div class="avatar-img">'+
-            '<img src="'+imgPhoto+'" alt="Avatar" class="avatar">'+
-            imgFlag+
-            '</div>'+
-            '<div class="avatar-text">'+
-            '<p class="nom-text">'+tab[i]["nom"]+'</p>'+
-            '<p class="nom-pos">'+tab[i]["occupation"]+'</p>'+
-            '</div>'
+
+            line.getElementsByClassName("col-sm")[i % numCol].innerHTML =
+                '<div class="avatar-img">' +
+                '<img src="' + imgPhoto + '" alt="Avatar" class="avatar">' +
+                imgFlag +
+                '</div>' +
+                '<div class="avatar-text">' +
+                '<p class="nom-text">' + tab[i]["nom"] + '</p>' +
+                '<p class="nom-pos">' + tab[i]["occupation"] + '</p>' +
+                '</div>'
         }
     }
 }
 
 // Add scrollspy to <body>
-$('body').scrollspy({target: ".navbar", offset: 50});
+$('body').scrollspy({ target: ".navbar", offset: 50 });
 
 // Add smooth scrolling on all links inside the navbar
 $("#navbarNav a").on('click', function(event) {
 
-  // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
 
-    // Prevent default anchor click behavior
-    event.preventDefault();
+        var x = document.getElementById("navbarNav")
+        if (x.className === "collapse navbar-collapse responsive") {
+            x.className = "collapse navbar-collapse";
+        }
 
-    // Store hash
-    var hash = this.hash;
+        // Prevent default anchor click behavior
+        event.preventDefault();
 
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 800, function(){
+        // Store hash
+        var hash = this.hash;
 
-    // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function() {
 
-  } // End if
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+
+    } // End if
 
 });
 
-
-
-
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("navbarNav")
+    if (x.className === "collapse navbar-collapse") {
+        x.className += " responsive";
+    } else {
+        x.className = "collapse navbar-collapse";
+    }
+}

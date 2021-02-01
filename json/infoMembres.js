@@ -61,7 +61,7 @@
 //                     "photo": "DuarteMatheus.jpg",
 //                     "flag":"brazil"
 //                 },
-              
+
 //             ]
 //         },
 //         "poleComm": {
@@ -97,7 +97,7 @@
 //                     "photo": "LiangJiayu.jpg",
 //                     "flag":"china"
 //                 },
-              
+
 //             ]
 //         },
 //         "poleEvent": {
@@ -115,7 +115,7 @@
 //                     "photo": "",
 //                     "flag":"brazil"
 //                 },
-              
+
 //             ]
 //         },
 //         "poleEtudes": {
@@ -133,8 +133,8 @@
 //                     "photo": "DubouxJeanPaul.jpg",
 //                     "flag":"france"
 //                 },
-                
-              
+
+
 //             ]
 //         },
 //         "poleVoyage": {
@@ -152,8 +152,8 @@
 //                     "photo": "",
 //                     "flag":"brazil"
 //                 },
-                
-              
+
+
 //             ]
 //         },
 //         "polePartage": {
@@ -171,8 +171,8 @@
 //                     "photo": "NunesLucas.jpg",
 //                     "flag":"brazil"
 //                 },
-                
-              
+
+
 //             ]
 //         }
 //     }
@@ -185,151 +185,148 @@
 infoMembres = {
     "bureau": {
         "numCol": 4,
-        "membres": [
-            {
+        "membres": [{
                 "nom": "RECKER Tobias",
                 "occupation": "Prez",
                 "photo": "ReckerTobias.jpg",
-                "flag":"belgium"
+                "flag": "belgium"
             },
             {
                 "nom": "JIMÉNEZ Victor",
                 "occupation": "Vice-Prez",
                 "photo": "JimenezVictor.jpg",
-                "flag":"mexico"
+                "flag": "mexico"
             },
             {
                 "nom": "ALMEIDA Juliana",
                 "occupation": "Screz",
                 "photo": "AlmeidaJuliana.jpg",
-                "flag":"brazil"
+                "flag": "brazil"
             },
             {
                 "nom": "LIU Victor",
                 "occupation": "Trez",
                 "photo": "LiuVictor.jpg",
-                "flag":"china"
+                "flag": "china"
             }
         ]
     },
     "respo": {
         "numCol": 5,
-        "membres": [
-            {
+        "membres": [{
                 "nom": "PEDRAZA Laura",
                 "occupation": "Respo Comm",
                 "photo": "PedrazaLaura.jpg",
-                "flag":"colombia"
+                "flag": "colombia"
             },
             {
                 "nom": "VON AH Lucas",
                 "occupation": "Respo Events",
                 "photo": "VonAhLucas.jpg",
-                "flag":"brazil"
+                "flag": "brazil"
             },
             {
                 "nom": "JELLOUL Hamza",
                 "occupation": "Respo Études",
                 "photo": "JelloulHamza.jpg",
-                "flag":"morocco"
+                "flag": "morocco"
             },
             {
                 "nom": "RABELO Pedro",
                 "occupation": "Respo Logistique",
                 "photo": "",
-                "flag":"brazil"
+                "flag": "brazil"
             },
             {
                 "nom": "DUARTE Matheus",
                 "occupation": "Respo Partage",
                 "photo": "DuarteMatheus.jpg",
-                "flag":"brazil"
+                "flag": "brazil"
             },
-          
+
         ]
     },
     "pole": {
         "numCol": 5,
-        "membres": [
-            {
+        "membres": [{
                 "nom": "WANG Qianyan",
                 "occupation": "Comm",
                 "photo": "WangQianyan.jpg",
-                "flag":"china"
+                "flag": "china"
             },
             {
                 "nom": "PEREZ Cristopher",
                 "occupation": "Comm",
                 "photo": "PerezCristopher.jpg",
-                "flag":"mexico"
+                "flag": "mexico"
             },
             {
                 "nom": "LI Yangyang",
                 "occupation": "Comm",
                 "photo": "LiYangyang.jpg",
-                "flag":"china"
+                "flag": "china"
             },
             {
                 "nom": "WU Bowen",
                 "occupation": "Comm",
                 "photo": "WuBowen.jpg",
-                "flag":"china"
+                "flag": "china"
             },
             {
                 "nom": "LIANG Jiayu",
                 "occupation": "Comm",
                 "photo": "LiangJiayu.jpg",
-                "flag":"china"
+                "flag": "china"
             },
             {
                 "nom": "CALLEJAS Sofia",
                 "occupation": "Events",
                 "photo": "CallejasSofia.jpg",
-                "flag":"chile"
+                "flag": "chile"
             },
             {
                 "nom": "VILARES Patricia",
                 "occupation": "Events",
                 "photo": "",
-                "flag":"brazil"
+                "flag": "brazil"
             },
             {
                 "nom": "DUVAL Arthur",
                 "occupation": "Etudes",
                 "photo": "DuvalArthur.jpg",
-                "flag":"france"
+                "flag": "france"
             },
             {
                 "nom": "DUBOUX Jean-Paul",
                 "occupation": "Etudes",
                 "photo": "DubouxJeanPaul.jpg",
-                "flag":"france"
+                "flag": "france"
             },
             {
                 "nom": "LOUREIRO Isadora",
                 "occupation": "Voyages",
                 "photo": "",
-                "flag":"brazil"
+                "flag": "brazil"
             },
             {
                 "nom": "PINHEIRO Daniel",
                 "occupation": "Voyages",
                 "photo": "",
-                "flag":"brazil"
+                "flag": "brazil"
             },
             {
                 "nom": "PINHEIRO João Paulo",
                 "occupation": "Partage",
                 "photo": "PinheiroJoaoPaulo.jpg",
-                "flag":"brazil"
+                "flag": "brazil"
             },
             {
                 "nom": "NUNES Lucas",
                 "occupation": "Partage",
                 "photo": "NunesLucas.jpg",
-                "flag":"brazil"
+                "flag": "brazil"
             },
-          
+
         ]
     },
 }
