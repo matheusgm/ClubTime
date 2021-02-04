@@ -46,6 +46,22 @@ function createGrid(tab, numCol, pos) {
     }
 }
 
+var timeLineHorizontal = document.getElementsByClassName("timeline-horizontal")[0];
+for (let i = 0; i < infoEvents.length; i++) {
+    var item = timeLineHorizontal.appendChild(document.createElement("li"));
+    item.className = "timeline-item";
+    item.innerHTML = '<div class="timeline-badge primary"><i class="bi-check"></i></div>' +
+        '<div class="timeline-panel">' +
+        '<div class="timeline-heading">' +
+        '<h4 class="timeline-title">' + infoEvents[i]["title"] + '</h4>' +
+        '<p><i class="bi-stopwatch"></i> ' + infoEvents[i]["date"] + '</p>' +
+        '</div>' +
+        '<div class="timeline-body">' +
+        '<p>' + infoEvents[i]["description"] + ' </p>' +
+        '</div>' +
+        '</div>'
+}
+
 // Add scrollspy to <body>
 $('body').scrollspy({ target: ".navbar", offset: 50 });
 

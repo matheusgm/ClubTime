@@ -89,7 +89,7 @@ a:hover {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .navbar-nav li {
         display: none;
     }
@@ -105,7 +105,7 @@ a:hover {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     #navbarNav.responsive {
         position: relative;
     }
@@ -182,12 +182,94 @@ a:hover {
     padding-top: 20px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    min-height: 550px
+}
+
+
+/***** Top content *****/
+
+.top-content {
+    width: 100%;
+    padding: 0 0 80px 0;
+}
+
+.top-content h1 {
+    padding-top: 60px;
+    color: #fff;
+}
+
+.top-content .description {
+    margin: 30px 0 0 0;
+    padding-bottom: 30px;
+}
+
+.top-content .description p {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.top-content .description a {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.top-content .description a:hover,
+.top-content .description a:focus {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.top-content .carousel-item .embed-responsive,
+.top-content .carousel-item img {
+    box-shadow: 0 0 15px 0 #444;
+}
+
+.top-content .carousel-control-prev {
+    left: -110px;
+    border-bottom: 0;
+}
+
+.top-content .carousel-control-next {
+    right: -110px;
+    border-bottom: 0;
+}
+
+.top-content .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
+.top-content .carousel-caption h3 {
+    color: #fff;
+}
+
+.top-content .carousel-caption .carousel-caption-description {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.top-content .carousel-indicators {
+    bottom: -60px;
+}
+
+.top-content .carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
 }
 
 #containerPres {
     padding-top: 40px;
     text-align: justify;
+    min-height: 400px;
+    font-size: 14pt;
 }
 
 #containerTromb .col-sm {
@@ -248,17 +330,26 @@ a:hover {
 }
 
 #containerEvent {
-    height: 500px;
+    min-height: 500px;
 }
 
 #containerPart {
-    height: 600px;
+    min-height: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#containerPart .imgPart {
+    width: 70%;
+    height: 70%;
 }
 
 #containerContact {
     padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
+    min-height: 500px;
 }
 
 #containerContact i {
